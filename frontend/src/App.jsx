@@ -12,7 +12,8 @@ function AppRoutes() {
       <Header />
       <Routes>
         <Route path="/" element={<SidebarMenu />} />
-		<Route path="/feedback" element={<FeedbackForm/>}/>
+        <Route path="/feedback" element={<FeedbackForm />} />
+        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </>
   );
