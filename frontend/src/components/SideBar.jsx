@@ -68,7 +68,7 @@ export default function SidebarMenu() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
-    <div className="flex h-full w-full bg-gray-100">
+    <div className="relative flex  h-screen w-screen bg-gray-100">
       {/* Sidebar */}
       <div className="w-1/3 bg-gradient-to-b overflow-y-scroll from-gray-800 to-gray-900 text-white p-4 flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold mt-4 mb-6">Menu</h2>

@@ -4,19 +4,19 @@ import ItemDetails from "./ItemDetails";
 function MenuDetails({ selectedItem }) {
   return (
     <>
-      <section className="relative bottom-0 w-2/3 h-screen right-0">
+      <section className="relative bottom-0 w-full h-screen max-h-screen right-0">
         <div
-          className="flex-1 p-2 w-full"
+          className="flex-1 p-2 w-full relative bottom-0"
           style={{ backgroundImage: "url(/images/blackBoard.jpg)" }}
         >
           <div className="flex justify-center items-center">
             <img
               src="/images/Menu-with-Add-ons.png"
               alt="menu image"
-              className="max-w-40"
+              className="max-w-40 max-h-40"
             />
           </div>
-          <div className="flex items-center justify-start space-x-4 mt-12">
+          <div className="flex items-start justify-start space-x-4 mt-12">
             <div className="z-30 transform -translate-x-8">
               <ItemDetails
                 selectedItem={selectedItem}

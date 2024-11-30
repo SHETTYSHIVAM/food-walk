@@ -9,7 +9,7 @@ function AppRoutes() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<SidebarMenu />} />
         <Route path="/feedback" element={<FeedbackForm />} />
