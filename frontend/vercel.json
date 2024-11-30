@@ -1,22 +1,14 @@
 {
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      }
-    },
-    "installCommand": "pnpm install",
-    "buildCommand": "pnpm build",
-    "routes": [
-      {
-        "src": "/[^.]+",
-        "dest": "/"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
