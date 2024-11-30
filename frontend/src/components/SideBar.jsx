@@ -95,9 +95,9 @@ export default function SidebarMenu() {
       {selectedItem ? (
         <MenuDetails selectedItem={selectedItem}/>
       ) : (
-        <p className="text-gray-600 text-lg">
-          Select an item to see more details.
-        </p>
+        <div className="flex w-full h-full justify-center items-center">
+          <h1 className="text-6xl font-bold">Select an item to see more details</h1>
+          </div>
       )}
     </div>
   );

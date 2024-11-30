@@ -5,15 +5,18 @@ export default function Header() {
   return (
     <header className="w-screen bg-gray-900 text-white shadow-md top-0 left-0">
       <nav className="px-4 lg:px-8 py-4 bg-gray-900">
+        {/* Logo and Title */}
+        <a href="#" className="flex items-center">
+          <img
+            src={logo}
+            className="mr-3 h-10 sm:h-12"
+            alt="Coders Cafe Logo"
+          />
+          <h1 className="text-3xl font-bold uppercase tracking-wide">
+            <span className="text-primary">Coders</span> Cafe
+          </h1>
+        </a>
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
-          {/* Logo and Title */}
-          <a href="#" className="flex items-center">
-            <img src={logo} className="mr-3 h-10 sm:h-12" alt="Coders Cafe Logo" />
-            <h1 className="text-3xl font-bold uppercase tracking-wide">
-              <span className="text-primary">Coders</span> Cafe
-            </h1>
-          </a>
-
           {/* Mobile Menu Button */}
           <button
             data-collapse-toggle="mobile-menu"
@@ -35,23 +38,35 @@ export default function Header() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </button> 
+          </button>
         </div>
       </nav>
 
       {/* Mobile Menu (Hidden by Default) */}
       <div className="hidden lg:hidden" id="mobile-menu">
         <div className="px-4 py-4 space-y-2 bg-gray-800">
-          <a href="#" className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded">
+          <a
+            href="#"
+            className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded"
+          >
             Home
           </a>
-          <a href="#" className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded">
+          <a
+            href="#"
+            className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded"
+          >
             About
           </a>
-          <a href="#" className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded">
+          <a
+            href="#"
+            className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded"
+          >
             Services
           </a>
-          <a href="#" className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded">
+          <a
+            href="#"
+            className="block text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded"
+          >
             Contact
           </a>
         </div>

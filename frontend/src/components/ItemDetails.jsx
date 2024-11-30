@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 function ItemDetails({ selectedItem }) {
   return (
-    <div className="flex items-center justify-center mx-24 relative w-full">
-      <div className="z-10 w-1/2">
+    <div className="flex items-center justify-center mx-24 relative w-full max-w-[800px">
+      <div className="z-10 w-1/2 max-w-[800px] flex items-center">
         <img
           src={selectedItem.imgSrc}
           alt={selectedItem.name}
-          className="w-full max-w-[800px] h-auto max-h-50 object-cover"
+          className="w-full max-w-[800px] h-auto max-h-[900px] object-cover"
         />
       </div>
 
