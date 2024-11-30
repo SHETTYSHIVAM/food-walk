@@ -5,6 +5,12 @@
       }
     },
     "installCommand": "pnpm install",
-    "buildCommand": "pnpm build"
+    "buildCommand": "pnpm build",
+    "routes": [
+    {
+      "src": "/[^.]+",
+      "dest": "/"
+    }
+  ]
   }
   
