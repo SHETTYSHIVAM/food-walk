@@ -7,17 +7,16 @@
     "installCommand": "pnpm install",
     "buildCommand": "pnpm build",
     "routes": [
-    {
-      "src": "/[^.]+",
-      "dest": "/"
-    },
-    
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+      {
+        "src": "/[^.]+",
+        "dest": "/"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
   }
   
